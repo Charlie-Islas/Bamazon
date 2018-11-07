@@ -63,9 +63,7 @@ var connection = mysql.createConnection({
                 else {
                     updateDB(quantity, product);
                 }
-
             }
-
             else{
                 console.log(" ");
                 console.log("That was not a valid integer. Please enter valid values...")
@@ -73,10 +71,7 @@ var connection = mysql.createConnection({
                 askQuestions();
             }
         });
-
-      //  connection.end();
     });
-
   }
 
   function updateDB(numberOfItems,productInfo){
@@ -94,7 +89,6 @@ var connection = mysql.createConnection({
                   item_id: item_id
               }
           ]
-         
       );
     
       console.log(" ");
@@ -107,7 +101,6 @@ var connection = mysql.createConnection({
       console.log(" ");
 
       otherProduct();
-
   }
 
   function otherProduct(){
@@ -130,9 +123,7 @@ var connection = mysql.createConnection({
             console.log("Okay, thanks for visiting Bamazon. Goodbye! :)")
             connection.end();
         }
-
     });
-
   }
 
   function printTable(rows) {
