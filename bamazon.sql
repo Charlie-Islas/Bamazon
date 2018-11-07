@@ -13,8 +13,6 @@ PRIMARY KEY (item_id)
 );
 
 
-SELECT * FROM products;
-
 INSERT INTO products (product_name, department_name, price, stock_quantity)
 VALUES ("MacBook Pro","Computers and Technology",3500,10);
 
@@ -22,7 +20,7 @@ INSERT INTO products (product_name, department_name, price, stock_quantity)
 VALUES ("Hot Wheels Track","Toys",120,2);
 
 INSERT INTO products (product_name, department_name, price, stock_quantity)
-VALUES ("Ninentendo Wii U","Toys",699,21);
+VALUES ("Nintendo Wii U","Toys",699,21);
 
 INSERT INTO products (product_name, department_name, price, stock_quantity)
 VALUES ("Cooking Pot","Household",99,72);
@@ -46,3 +44,4 @@ INSERT INTO products (product_name, department_name, price, stock_quantity)
 VALUES ("Queen Album","Music and Multimedia",20,200);
 
 
+SELECT * FROM products;
