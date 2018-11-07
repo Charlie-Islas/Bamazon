@@ -90,7 +90,7 @@ var connection = mysql.createConnection({
               }
           ]
       );
-    
+
       console.log(" ");
       console.log("Thanks for your purchase! Find your corresponding details below:")
       console.log(" ");
@@ -99,7 +99,10 @@ var connection = mysql.createConnection({
       console.log("Purchased units: " + numberOfItems);
       console.log("Total price: $" + totalCost);
       console.log(" ");
-
+      
+      if(newStock===0){
+        deleteProduct(productInfo.item_id,productInfo.product_name);
+      }
       otherProduct();
   }
 
@@ -124,6 +127,17 @@ var connection = mysql.createConnection({
             connection.end();
         }
     });
+  }
+
+  function deleteProduct(item_id,product_name){
+    console.log("The stock of the purchased product has been entirely deployed. This item is no longer available: "+product_name);
+    connection.query(
+        "DELETE FROM products WHERE ?",
+        {
+          item_id: item_id
+        },
+      );
+    console.log(" ");
   }
 
   function printTable(rows) {
