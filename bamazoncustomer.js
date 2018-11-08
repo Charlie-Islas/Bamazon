@@ -44,7 +44,7 @@ var connection = mysql.createConnection({
             {
             type: "input",
             name: "quantity",
-            message: "How many of these items do you want to purchase? Enter only positive integers please... "
+            message: "How many of these items do you want to purchase? Enter only positive integers please: "
             }
         ])
         .then(function(res) {
