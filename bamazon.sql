@@ -20,7 +20,7 @@ INSERT INTO products (product_name, department_name, price, stock_quantity)
 VALUES ("Hot Wheels Track","Toys",120,2);
 
 INSERT INTO products (product_name, department_name, price, stock_quantity)
-VALUES ("Nintendo Wii U","Toys",699,21);
+VALUES ("Nintendo Wii U","Toys",699.99,21);
 
 INSERT INTO products (product_name, department_name, price, stock_quantity)
 VALUES ("Cooking Pot","Household",99,72);
