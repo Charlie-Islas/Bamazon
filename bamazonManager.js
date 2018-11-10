@@ -73,6 +73,7 @@ function lowInventory(){
 }
 
 function askQuestions() {
+    console.log(" ");
     connection.query("SELECT * FROM products", function (err, res) {
         if (err) throw err;
         printTable(res);
